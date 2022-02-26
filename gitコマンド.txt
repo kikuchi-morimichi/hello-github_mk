@@ -47,3 +47,11 @@ git revert HEAD #最新コミットを取り消し、前のコミットにする
 git branch #ブランチの状態を確認
 git branch ○○ #ブランチの作成
 git checkout ○○ #
+
+【リモートレポジトリの作成】
+ssh-keygen -t rsa #公開鍵の作成
+clip < ~/.ssh/id_rsa.pub #鍵をクリップボードへコピー
+ssh -T git@github.com #接続確認
+
+git remote -v #リモートレポジトリの確認
+git remote add origin git@github.com:kikuchi-morimichi/hello-github_mk.git
