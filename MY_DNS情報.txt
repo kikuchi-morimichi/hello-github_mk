@@ -1,0 +1,14 @@
+MasterID & Password :
+                mydns554129     HDUAwKgVcZc
+
+        Child ID & Password :
+                None
+
+
+        IPv4 :
+                POP3(S)/IMAP4(S)/FTP(S) Server = ipv4.mydns.jp
+                HTTP-BASIC URL = http(s)://ipv4.mydns.jp/login.html
+
+        IPv6 :
+                POP3(S)/IMAP4(S)/FTP(S) Server = ipv6.mydns.jp
+                HTTP-BASIC URL = http(s)://ipv6.mydns.jp/login.html

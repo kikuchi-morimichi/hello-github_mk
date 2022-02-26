@@ -1,0 +1,49 @@
+git 
+
+git 
+git --version
+
+git config --global user.name "aaa"
+git config --global user,email "aaa"
+git config --list
+
+ディレクトリに移動
+git init
+
+git status
+
+ファイル作成
+
+git status
+git status -s
+
+git add ファイル名
+or
+git add .
+
+git commit 
+vimが開くのでコメントを書いてesc, :wq, enter
+or
+
+git commit -a -m "こめんと"  
+#addとcommitを同時に行うコマンド
+# -a は仮登録とコミットを同時に行うオプション
+# -m は一行だけコミットメッセージを登録できるオプション
+
+git log
+git log --oneline
+git log -1
+
+git diff #ステージングとワーキングディレクトリの差分を表示
+git diff -cached #最新のコミットとステージングの差分を表示
+git diff HEAD #最新コミットのスナップショットとワーキングディレクトリの差分
+
+git reset ○○ #ステージングを前の状態にリセット
+git checkout ○○ #ワーキングディレクトリを前の状態にリセット
+
+git revert HEAD #最新コミットを取り消し、前のコミットにする
+
+【ブランチ作製】
+git branch #ブランチの状態を確認
+git branch ○○ #ブランチの作成
+git checkout ○○ #
