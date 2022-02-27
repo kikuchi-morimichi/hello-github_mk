@@ -42,10 +42,15 @@ git diff #ステージングとワーキングディレクトリの差分を表�
 git diff -cached #最新のコミットとステージングの差分を表示
 git diff HEAD #最新コミットのスナップショットとワーキングディレクトリの差分
 
+【取り消し等】
+git checkout -- ○○ #ワーキングディレクトリを前の状態にリセット
 git reset ○○ #ステージングを前の状態にリセット
-git checkout ○○ #ワーキングディレクトリを前の状態にリセット
+git reset HEAD ○○　#ステージングを前の状態にリセット 
+git reset --mixed HEAD  #ステージングを前の状態にリセット 
 
 git revert HEAD #最新コミットを取り消し、前のコミットにする
+git reset --soft HEAD #最新コミットを取り消す
+git commit --amend #最新コミットを取り消し、新しいコミットを行う
 
 【ブランチ作成】
 git branch #ブランチの状態を確認
