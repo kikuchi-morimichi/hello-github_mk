@@ -13,12 +13,14 @@ nmcli c mod enp0s3 ipv4.method manual ipv4.addresses 192.168.0.35/24 ipv4.gatewa
 # nmcli con mod enp0s3 ipv4.gateway "192.168.1.254"
 # nmcli con mod enp0s3 ipv4.method manual
 # nmcli con down enp0s3 ; nmcli con up enp0s3
-nmcli con mod enp0s3 ipv4.dns 9.9.9.9
+
 reboot
 
 # nmcli -f ipv4 con show enp0s3　#設定できているか確認
 
-
+【ssh接続】
+systemctl status sshd
+sudo apt-get install openssh-server
 
 【インストール関係】
 yum list installed　　　　　  #インストールされているものを一覧表示
